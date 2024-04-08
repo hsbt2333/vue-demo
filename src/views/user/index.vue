@@ -13,9 +13,10 @@
       <el-form-item>
         <el-button type="primary" @click="onSubmit">查询</el-button>
         <el-button type="primary" @click="openAddEdit">添加</el-button>
+        <el-button type="primary" @click="test1">Test1</el-button>
       </el-form-item>
     </el-form>
-    <el-table :data="tableData" border style="width: 50%">
+    <el-table :data="tableData" :border="true" style="width: 70%">
       <el-table-column prop="date" label="日期" width="180"> </el-table-column>
       <el-table-column prop="name" label="姓名" width="180"> </el-table-column>
       <el-table-column prop="address" label="地址"> </el-table-column>
@@ -67,7 +68,13 @@ export default {
       console.log("submit!");
     },
     openAddEdit() {
-        this.$refs.addEdit.openDia();
+      this.$refs.addEdit.openDia();
+    },
+    test1() {
+      this.$confirm("不允许手动执行", "提示", {
+        showCancelButton: false,
+        type: "warning",
+      });
     },
   },
   created() {},
