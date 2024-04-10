@@ -22,14 +22,18 @@
       <el-table-column prop="address" label="地址"> </el-table-column>
     </el-table>
     <add-edit ref="addEdit" />
+    <!-- <app-report /> -->
+  
   </div>
 </template>
 <script>
 import addEdit from "./addEdit";
+import appReport from "../appReport";
 
 export default {
   components: {
     addEdit,
+    appReport
   },
   props: {},
   data() {

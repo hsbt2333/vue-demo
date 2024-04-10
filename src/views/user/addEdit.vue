@@ -6,9 +6,6 @@
     :before-close="handleClose"
   >
     <el-form ref="myForm" :model="form" label-width="150px">
-      <el-form-item label="姓名">
-        <el-input v-model="form.name"></el-input>
-      </el-form-item>
       <el-form-item label="二维数组" prop="myArr">
         <el-popover
           @show="myArrShow"
@@ -49,8 +46,16 @@
                     v-for="(item, index2) in itemArr"
                     :key="`${index}-${index2}`"
                   >
-                    <span v-if="(item.key !== '' || item.value !== '') && index2 !== itemArr.length - 1">{{ item.key }}={{ item.value }},</span>
-                    <span v-else-if="item.key !== '' || item.value !== ''">{{ item.key }}={{ item.value }}</span>
+                    <span
+                      v-if="
+                        (item.key !== '' || item.value !== '') &&
+                        index2 !== itemArr.length - 1
+                      "
+                      >{{ item.key }}={{ item.value }},</span
+                    >
+                    <span v-else-if="item.key !== '' || item.value !== ''"
+                      >{{ item.key }}={{ item.value }}</span
+                    >
                   </span>
                 </span>
               </div>
@@ -61,7 +66,11 @@
               >
                 <el-row :gutter="20" type="flex" align="middle">
                   <el-col :span="8">
-                    <el-input size="mini" v-model="item.key" @change='clearTestArr'></el-input>
+                    <el-input
+                      size="mini"
+                      v-model="item.key"
+                      @change="clearTestArr"
+                    ></el-input>
                   </el-col>
                   <el-col :span="2">
                     <span class="text-center">=</span>
@@ -100,12 +109,17 @@
           @hide="myTimeArrHide"
           placement="right"
           width="400"
-          trigger="click">
+          trigger="click"
+        >
           <div>
-            <el-button type="success" size="mini" style="font-size: 12px" round @click="addMyTime">
-              <i
-                class="el-icon-plus"
-              ></i>
+            <el-button
+              type="success"
+              size="mini"
+              style="font-size: 12px"
+              round
+              @click="addMyTime"
+            >
+              <i class="el-icon-plus"></i>
               <span>添加一个时间范围</span>
             </el-button>
             <div
@@ -118,31 +132,39 @@
                   <el-time-picker
                     is-range
                     v-model="testTimeArr[index]"
-                    size='mini'
-                    :clearable='false'
+                    size="mini"
+                    :clearable="false"
                     range-separator="-"
                     start-placeholder="开始时间"
-                    end-placeholder="结束时间">
+                    end-placeholder="结束时间"
+                  >
                   </el-time-picker>
                 </el-col>
                 <el-col :span="2" style="margin-top: 5px">
-                  <i class="el-icon-error text-center custom-icon-button" style="color: #f56c6c;font-size: 20px"
-                      @click="removeMyTime(index)"
+                  <i
+                    class="el-icon-error text-center custom-icon-button"
+                    style="color: #f56c6c; font-size: 20px"
+                    @click="removeMyTime(index)"
                   ></i>
                 </el-col>
               </el-row>
             </div>
           </div>
-          <span class='my-arr edit-look' slot="reference">
+          <span class="my-arr edit-look" slot="reference">
             <i class="el-icon-edit-outline"></i> 编辑
           </span>
         </el-popover>
         <span> 已设置 {{ form.myTimeArr.length }} 组范围 </span>
         <div>
-          <span v-for="(item,index) in testTimeArr" :key="index">
+          <span v-for="(item, index) in testTimeArr" :key="index">
             <span>{{ formatTime(item[0]) }} - {{ formatTime(item[1]) }}</span>
-            <span v-show="testTimeArr.length > 1 && index !== testTimeArr.length-1">,</span>
-            <br v-show="(index+1)%3===0" />
+            <span
+              v-show="
+                testTimeArr.length > 1 && index !== testTimeArr.length - 1
+              "
+              >,</span
+            >
+            <br v-show="(index + 1) % 3 === 0" />
           </span>
         </div>
       </el-form-item>
@@ -160,18 +182,25 @@
         </el-radio-group>
       </el-form-item>
       <el-form-item label="下拉框只读" prop="mySelect">
-        <el-select class="readonly-select" v-model="form.mySelect" placeholder="请选择">
+        <el-select
+          class="readonly-select"
+          v-model="form.mySelect"
+          placeholder="请选择"
+        >
           <el-option label="1" value="1"></el-option>
           <el-option label="2" value="2"></el-option>
         </el-select>
+      </el-form-item>
+      <el-form-item label="开关" prop="mySwitch">
+        <el-switch :value="form.mySwitch" @change="handleSwitch"></el-switch>
       </el-form-item>
     </el-form>
     <span slot="footer" class="dialog-footer">
       <el-button @click="dialogVisible = false">取 消</el-button>
       <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
-      <el-button type="primary" @click="abc">测试1</el-button>
-      <el-button type="primary" @click="aaa">测试2</el-button>
-      <el-button type="primary" @click="bbb">测试3</el-button>
+      <el-button type="primary" @click="test1">测试1</el-button>
+      <el-button type="primary" @click="test2">测试2</el-button>
+      <el-button type="primary" @click="test3">测试3</el-button>
     </span>
   </el-dialog>
 </template>
@@ -184,12 +213,13 @@ export default {
       dialogVisible: false,
       isInput: false,
       form: {
-        name: '',
+        name: "",
         // 多个键值组成的字符串的数组 ['1=1,a=a,b=b','2=2','c=c,d=d','e=e,f=f,3=3']
         myArr: [],
         // 时间组
         myTimeArr: [],
-        myRadio: '',
+        myRadio: "",
+        mySwitch: false,
       },
       // 将myArr的结构转成比较容易理解的结构，二维数组，最小的元素是key value对象
       testArr: [
@@ -226,7 +256,6 @@ export default {
       console.log("myInput new:", item1);
       console.log("myInput old:", item2);
     }, */
-
   },
   computed: {
     radioValue: {
@@ -252,7 +281,7 @@ export default {
   methods: {
     openDia() {
       this.dialogVisible = true;
-      this.form.myRadio = 'NHSC'
+      this.form.myRadio = "NHSC";
     },
     handleClose() {
       this.$refs["myForm"].resetFields();
@@ -281,7 +310,7 @@ export default {
       console.log("mapArr:", mapArr);
       //arr[i].map(item=>item.key+"="+item.value);
     },
-    abc() {
+    test1() {
       let arr = ["1=1,2=2,3=3", "4=4", "5=5,6=6"];
       //["1=1,2=2","3=3,4=4"]
       let arr3 = arr.map((strItem) => {
@@ -297,31 +326,31 @@ export default {
         return arr2;
       });
       console.log("abc:", arr3);
-      arr3.push("111")
+      arr3.push("111");
       console.log("abc:", arr3);
-      arr3.pop()
+      arr3.pop();
       console.log("abc:", arr3);
 
       let a = {
-        a: 'a',
-        b: 'b',
-        c: 'c',
-        d: 'd',
-        i: 'iii',
-      }
+        a: "a",
+        b: "b",
+        c: "c",
+        d: "d",
+        i: "iii",
+      };
       let b = {
-        e: 'e',
-        a: 'f',
-        c: 'f',
-        d: 'f',
-        g: 'g',
-        h: 'h',
-        i: 'iiiii',
-      }
-      a = {...a,...b}
-      console.log(a)
+        e: "e",
+        a: "f",
+        c: "f",
+        d: "f",
+        g: "g",
+        h: "h",
+        i: "iiiii",
+      };
+      a = { ...a, ...b };
+      console.log(a);
     },
-    aaa() {
+    test2() {
       let arr = ["1=1,2=2,3=3", "4=4", "5=5,6=6"];
       let arr3 = arr.map((strItem) => {
         return strItem.split(",").map((str) => {
@@ -329,36 +358,59 @@ export default {
           return { key, value };
         });
       });
-      console.log("aaa:", arr3);
+      console.log("arr3:", arr3);
     },
-    bbb() {
+    test3() {
       let str = "1=";
       let arr = str.split(",");
       console.log("bbb:", arr);
     },
-    myArrShow(){
-      console.log("this.form.myArr:",this.form.myArr)
-      console.log("this.testArr:",this.testArr)
+    handleSwitch() {
+      this.$confirm("啦啦啦?", "提示", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        type: "warning",
+      })
+        .then(() => {
+          this.form.mySwitch = true;
+        })
+        .catch(() => {
+          this.form.mySwitch = false;
+        });
     },
-    myArrHide(){
-      // 隐藏弹出框，将 extParamList 传递给extParams
+    myArrShow() {
+      // 隐藏弹出框，将 myArr 传递给 testArr
+      let arr = this.form.myArr;
+      console.log(arr)
+      this.testArr = arr.map((strItem) => 
+        strItem.split(",").map((str) => {
+          let [key, value] = str.split("=");
+          return { key, value };
+        })
+      );
+      console.log(this.testArr)
+    },
+    myArrHide() {
+      // 隐藏弹出框，将 testArr 传递给 myArr
       this.form.myArr = this.testArr
         .map((itemArr) =>
           itemArr
             .filter((item) => item && item.key !== "" && item.value !== "")
             .map((item) => item.key + "=" + item.value)
+            .join(',')
         )
-        .filter(array => array.length > 0);
+        .filter((array) => array.length > 0);
+        console.log(this.form.myArr)
     },
-    clearTestArr(){
+    clearTestArr() {
       this.testArr = this.testArr
-        .map(itemArr=>
+        .map((itemArr) =>
           itemArr
-            .filter(item=> item.key !== '' || item.value !== '')
-            .map(item => item)
+            .filter((item) => item.key !== "" || item.value !== "")
+            .map((item) => item)
         )
-        .filter((array) => array.length > 0)
-      console.log(this.extParamList)
+        .filter((array) => array.length > 0);
+      console.log(this.extParamList);
     },
     addItem(i) {
       if (i !== -1) {
@@ -383,45 +435,44 @@ export default {
       }
     },
     // 存在时间重合返回true 不存在返回false
-    existTimeIntersect(timeArr){
-      for(let i=0;i<timeArr.length-1;i++){
-        const [start1,end1] = timeArr[i];
-        for(let j=i+1;j<timeArr.length;j++){
-          const [start2,end2] = timeArr[j];
-          if(!(end1 < start2 || end2 < start1)){
-            console.log('循环生效时间存在重合的时间区间')
-            return true
+    existTimeIntersect(timeArr) {
+      for (let i = 0; i < timeArr.length - 1; i++) {
+        const [start1, end1] = timeArr[i];
+        for (let j = i + 1; j < timeArr.length; j++) {
+          const [start2, end2] = timeArr[j];
+          if (!(end1 < start2 || end2 < start1)) {
+            console.log("循环生效时间存在重合的时间区间");
+            return true;
           }
         }
       }
-      return false
+      return false;
     },
-    formatTime(dateTime){
-      let hour = dateTime.getHours().toString().padStart(2, '0');
-      let minute = dateTime.getMinutes().toString().padStart(2, '0');
-      let second = dateTime.getSeconds().toString().padStart(2, '0');
-      return hour + ":" + minute + ":" + second + " "
+    formatTime(dateTime) {
+      let hour = dateTime.getHours().toString().padStart(2, "0");
+      let minute = dateTime.getMinutes().toString().padStart(2, "0");
+      let second = dateTime.getSeconds().toString().padStart(2, "0");
+      return hour + ":" + minute + ":" + second + " ";
     },
-    myTimeArrShow(){
-      console.log("this.form.myTimeArr: ",this.form.myTimeArr)
-      console.log("this.testTimeArr: ",this.testTimeArr)
+    myTimeArrShow() {
+      console.log("this.form.myTimeArr: ", this.form.myTimeArr);
+      console.log("this.testTimeArr: ", this.testTimeArr);
     },
-    myTimeArrHide(){
-      this.form.myTimeArr = this.testTimeArr.map(timeArr=>{
-        let [startTime,endTime] = timeArr.map(item=>item.getTime())
-        return {startTime,endTime}
-      })
+    myTimeArrHide() {
+      this.form.myTimeArr = this.testTimeArr.map((timeArr) => {
+        let [startTime, endTime] = timeArr.map((item) => item.getTime());
+        return { startTime, endTime };
+      });
     },
-    addMyTime(){
+    addMyTime() {
       this.testTimeArr.push([
-        new Date(2000, 1, 1, 0, 0,0),
-        new Date(2000, 1, 1, 23, 59,59)
-      ])
+        new Date(2000, 1, 1, 0, 0, 0),
+        new Date(2000, 1, 1, 23, 59, 59),
+      ]);
     },
-    removeMyTime(index){
-      this.testTimeArr.splice(index,1);
-    }
-
+    removeMyTime(index) {
+      this.testTimeArr.splice(index, 1);
+    },
   },
   created() {},
   mounted() {
@@ -452,19 +503,18 @@ export default {
   cursor: pointer;
 }
 
-
-.edit-look{
+.edit-look {
   color: #d33b30;
-  cursor:pointer;
+  cursor: pointer;
   padding-bottom: 2px;
-  border-bottom-style:solid;
-  border-bottom-width:1px;
-  border-bottom-color:white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
 }
-.edit-look:hover{
-  border-bottom-color:red;
+.edit-look:hover {
+  border-bottom-color: red;
 }
-.readonly-select:hover{
-  cursor:not-allowed;
+.readonly-select:hover {
+  cursor: not-allowed;
 }
 </style>
