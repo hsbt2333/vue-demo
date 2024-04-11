@@ -24,9 +24,8 @@
               ><div class="grid-content bg-purple"></div
             ></el-col>
           </el-row>
-          <el-row :gutter="20">
-            <el-col :span="9">
-              <el-time-picker
+          <div style="display: flex;padding-bottom: 20px;justify-content: flex-start;align-items: center;gap: 20px;">
+            <el-time-picker
                 is-range
                 v-model="abc"
                 size="mini"
@@ -37,14 +36,20 @@
                 end-placeholder="结束时间"
               >
               </el-time-picker>
-            </el-col>
-            <el-col :span="2">
+              <i
+                class="el-icon-success"
+                style="color: #67C23A; font-size: 50px"
+              ></i>
+              <i
+                class="el-icon-warning"
+                style="color: #E6A23C; font-size: 100px"
+              ></i>
               <i
                 class="el-icon-error"
-                style="color: #f56c6c;font-size: 18px; margin-top: 5px;"
+                style="color: #f56c6c; font-size: 150px"
               ></i>
-            </el-col>
-          </el-row>
+              <span style="font-size: small;"> 让你放电影，你不是mv就是live，唱了一晚上了兄弟，你以为KTV啊，你耍我啊 </span>
+          </div>
           <el-row :gutter="20">
             <el-col :span="4"
               ><div class="grid-content bg-purple"></div
