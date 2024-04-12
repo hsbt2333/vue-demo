@@ -4,7 +4,7 @@
       <el-header></el-header>
       <el-container>
         <el-aside width="200px"></el-aside>
-        <el-main>
+        <el-main style="height: 700px;">
           <!-- <h1>Main</h1>
                     <my-tabs :list="list">
                         
@@ -15,52 +15,10 @@
                             {{ item.label }}
                         </el-tab-pane>
                     </el-tabs> -->
-          <user-manage />
-          <el-row :gutter="20">
-            <el-col :span="16"
-              ><div class="grid-content bg-purple"></div
-            ></el-col>
-            <el-col :span="8"
-              ><div class="grid-content bg-purple"></div
-            ></el-col>
-          </el-row>
-          <div style="display: flex;padding-bottom: 20px;justify-content: flex-start;align-items: center;gap: 20px;">
-            <el-time-picker
-                is-range
-                v-model="abc"
-                size="mini"
-                :clearable="false"
-                value-format="timestamp"
-                range-separator="-"
-                start-placeholder="开始时间"
-                end-placeholder="结束时间"
-              >
-              </el-time-picker>
-              <i
-                class="el-icon-success"
-                style="color: #67C23A; font-size: 50px"
-              ></i>
-              <i
-                class="el-icon-warning"
-                style="color: #E6A23C; font-size: 100px"
-              ></i>
-              <i
-                class="el-icon-error"
-                style="color: #f56c6c; font-size: 150px"
-              ></i>
-              <span style="font-size: small;"> 让你放电影，你不是mv就是live，唱了一晚上了兄弟，你以为KTV啊，你耍我啊 </span>
-          </div>
-          <el-row :gutter="20">
-            <el-col :span="4"
-              ><div class="grid-content bg-purple"></div
-            ></el-col>
-            <el-col :span="16"
-              ><div class="grid-content bg-purple"></div
-            ></el-col>
-            <el-col :span="4"
-              ><div class="grid-content bg-purple"></div
-            ></el-col>
-          </el-row>
+          <!-- <user-manage /> -->
+          <!-- <my-align /> -->
+          <!-- <my-table /> -->
+          <!-- <percent-bar-test /> -->
         </el-main>
       </el-container>
       <el-footer></el-footer>
@@ -71,6 +29,10 @@
 import myTabs from "@/components/myTabs.vue";
 import mySelect from "@/components/mySelect.vue";
 import userManage from "@/views/user/index.vue";
+import myTabs2 from '@/components/myTabs2.vue';
+import myTable from '@/components/myTable.vue';
+import MyAlign from './align/myAlign.vue';
+import PercentBarTest from './percentBarTest.vue';
 
 export default {
   name: "index",
@@ -78,6 +40,10 @@ export default {
     myTabs,
     mySelect,
     userManage,
+    myTabs2,
+    myTable,
+    MyAlign,
+    PercentBarTest
   },
   data() {
     return {
@@ -96,7 +62,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="css" scoped>
 .el-header,
 .el-footer {
   background-color: #b3c0d1;
@@ -110,33 +76,5 @@ export default {
   color: #333;
   text-align: center;
   line-height: 200px;
-}
-.el-row {
-  margin-bottom: 20px;
-}
-
-.el-row:last-child {
-  margin-bottom: 0;
-}
-
-.el-col {
-  border-radius: 4px;
-}
-.bg-purple-dark {
-  background: #99a9bf;
-}
-.bg-purple {
-  background: #d3dce6;
-}
-.bg-purple-light {
-  background: #e5e9f2;
-}
-.grid-content {
-  border-radius: 4px;
-  min-height: 36px;
-}
-.row-bg {
-  padding: 10px 0;
-  background-color: #f9fafc;
 }
 </style>
