@@ -28,7 +28,11 @@
 </template>
 <script>
 export default {
-    
+    data(){
+      return {
+        abc: ''
+      }
+    }
 }
 </script>
 <style scoped>

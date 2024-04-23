@@ -23,10 +23,10 @@
   </template>
   
   <script>
-  import tagTempate from '../components/tagTempate.vue'
-  import begunRunNumTag from '../components/begunRunNumTag'
-  import actuatorTag from '../components/actuatorTag'
-  import acDateTag from '../components/acDateTag'
+  import tagTempate from './components/tagTempate.vue'
+  import begunRunNumTag from './components/begunRunNumTag'
+  import actuatorTag from './components/actuatorTag'
+  import acDateTag from './components/acDateTag'
   export default {
     components: {
       tagTempate,

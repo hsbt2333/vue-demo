@@ -47,6 +47,7 @@ export default {
 }
 
 .el-table .el-table__expand-icon--expanded .el-icon-arrow-right {
+  transform: rotate(90deg);
   -ms-transform: rotate(90deg);
 }
 
@@ -81,6 +82,7 @@ export default {
 }
 
 .ie9 .el-table-filter .el-scrollbar__view .el-table-filter__checkbox-group .el-checkbox__input.is-checked .el-checkbox__inner::after {
+  transform: rotate(45deg) scaleY(1);
   -ms-transform: rotate(45deg) scaleY(1);
 }
 </style>

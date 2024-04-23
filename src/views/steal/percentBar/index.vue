@@ -6,7 +6,7 @@
 
 <script>
 
-import percentBar from '@/components/percentBar.vue';
+import percentBar from './components/percentBar.vue';
 export default {
     components: {
         percentBar,

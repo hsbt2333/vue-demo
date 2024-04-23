@@ -21,19 +21,16 @@
       <el-table-column prop="name" label="姓名" width="180"> </el-table-column>
       <el-table-column prop="address" label="地址"> </el-table-column>
     </el-table>
-    <add-edit ref="addEdit" />
+    <add-edit ref="addEdit" @search="search" />
     <!-- <app-report /> -->
-  
   </div>
 </template>
 <script>
 import addEdit from "./addEdit";
-import appReport from "../appReport";
 
 export default {
   components: {
-    addEdit,
-    appReport
+    addEdit
   },
   props: {},
   data() {
@@ -80,6 +77,11 @@ export default {
         type: "warning",
       });
     },
+    search(key){
+      console.log(key)
+    },
+  },
+  watch:{
   },
   created() {},
   mounted() {
