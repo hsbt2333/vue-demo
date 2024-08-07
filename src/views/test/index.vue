@@ -14,7 +14,19 @@ export default {
         myAlign,
         myArray,
         myTabs
-    }
+    },
+    mounted(){
+        this.$axios({
+            method: 'post',
+            url: '/login',
+            data: {}
+        }).then((response)=>{
+            console.log(response);
+        }).catch((err)=>{
+            console.log(err);
+        })
+    },
+    methods:{}
 }
 </script>
 

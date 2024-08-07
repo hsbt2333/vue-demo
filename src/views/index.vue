@@ -8,9 +8,15 @@
             <el-menu-item index="/user">
               <span slot="title">user</span>
             </el-menu-item>
-            <el-menu-item index="/test">
-              <span slot="title">test</span>
-            </el-menu-item>
+            <el-submenu index="/test">
+              <template slot="title">
+                <span>test</span>
+              </template>
+              <el-menu-item-group>
+                <el-menu-item index="/test/antdx6/index1">antdx6-1</el-menu-item>
+                <el-menu-item index="/test/antdx6/index2">antdx6-2</el-menu-item>
+              </el-menu-item-group>
+            </el-submenu>
             <el-submenu index="/steal">
               <template slot="title">
                 <span>take</span>
