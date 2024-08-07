@@ -6,7 +6,7 @@
     <!-- <div style="width: 15%;">
       <el-progress :text-inside="true" :stroke-width="20" :percentage="100" status="success"></el-progress>
     </div> -->
-    <my-node :percentage="50" label="获取批量日期" nodeStatus="作业" :nodeId="-2"></my-node>
+    <!-- <my-node :percentage="50" label="获取批量日期" nodeStatus="作业" :nodeId="-2"></my-node> -->
   </div>
 </template>
 <script>
@@ -99,34 +99,13 @@ export default {
   methods: {
   },
   mounted(){
-    Graph.registerNode('custom-rect', {
+    /* Graph.registerNode('custom-rect', {
       //inherit: 'rect', // 继承自 Shape.Rect
       inherit: "vue-shape",
       width: 300, // 默认宽度
       height: 40, // 默认高度
       components: MyProgress,
-    })
-
-        // 注册自定义节点
-    Graph.registerNode('my-node', {
-      inherit: 'vue-shape',
-      width: 120,
-      height: 60,
-      component: {
-        template: `<my-node :label="label" :percentage="percentage" :nodeStatus="nodeStatus" :nodeId="nodeId" />`,
-        components: {
-          MyNode
-        },
-        data() {
-          return {
-            nodeStatus: '作业',
-            nodeId: 1, 
-            label: '获取批量日期',
-            progress: 0
-          }
-        }
-      }
-    })
+    }) */
 
     const graph = new Graph({
       container: document.getElementById('container'),
@@ -141,17 +120,47 @@ export default {
       },
     });
 
-    graph.fromJSON(this.data);
+    //graph.fromJSON(this.data);
     graph.centerContent(); // 图形居中
 
-    graph.addNode({
+    /* graph.addNode({
       id: 'node789',
       x: 100,
       y: 60,
       shape: 'custom-rect',
       label: 'My Custom Rect', // label 继承于基类的自定义选项
 
-    });
+    }); */
+
+
+        // 注册自定义节点
+    Graph.registerNode('my-node', {
+      inherit: 'vue-shape',
+      width: 120,
+      height: 60,
+      component: {
+        template: `<my-node :label="model.label" :percentage="model.percentage" :nodeStatus="model.nodeStatus" :nodeId="model.nodeId" />`,
+        inject: ["getGraph", "getNode"],
+        components: {
+          MyNode
+        },
+        data(){
+          return {
+            model: {}
+          }
+        },
+        mounted(){
+          console.log(this.props);
+          console.log('num: ',this.num);
+
+          const node = this.getNode();
+          this.model = { ...node.data }
+          console.log("node: ",node.data);
+        }
+      }
+    })
+
+
 
     let mynode1 = graph.addNode({
       id: 'mynode1',
@@ -162,7 +171,8 @@ export default {
         label: '我的作业',
         nodeStatus: '作业',
         nodeId: 2,
-        progress: 75
+        percentage: 10,
+        num: 100
       }
     })
 
@@ -171,11 +181,12 @@ export default {
       x: 100,
       y: 200,
       shape: 'my-node',
-      data: {
+      data:{
         label: '我的任务',
         nodeStatus: '任务',
         nodeId: 3,
-        progress: 75
+        percentage: 75,
+        num: 200
       }
     })
 
