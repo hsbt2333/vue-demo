@@ -1,0 +1,2330 @@
+[
+  {
+      "position": {
+          "x": 100,
+          "y": 1100
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "每日任务后置处理"
+          },
+          "body": {
+              "rx": 6,
+              "ry": 6
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254477"
+              },
+              {
+                  "group": "right",
+                  "id": "00254478"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254479"
+              },
+              {
+                  "group": "left",
+                  "id": "00254480"
+              }
+          ]
+      },
+      "id": "00159431",
+      "data": {
+          "id": 64,
+          "typeNode": "dialogGroup"
+      },
+      "zIndex": -31
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 200
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "每日任务前置处理"
+          },
+          "body": {
+              "rx": 6,
+              "ry": 6
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254441"
+              },
+              {
+                  "group": "right",
+                  "id": "00254442"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254443"
+              },
+              {
+                  "group": "left",
+                  "id": "00254444"
+              }
+          ]
+      },
+      "id": "00159413",
+      "data": {
+          "id": 63,
+          "typeNode": "dialogGroup"
+      },
+      "zIndex": -30
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 1000
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "数据清理、备份任务-批后指标检查报告导出"
+          },
+          "body": {
+              "rx": 18,
+              "ry": 26
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254473"
+              },
+              {
+                  "group": "right",
+                  "id": "00254474"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254475"
+              },
+              {
+                  "group": "left",
+                  "id": "00254476"
+              }
+          ]
+      },
+      "id": "00159429",
+      "data": {
+          "id": 179,
+          "typeNode": "dialogJob"
+      },
+      "zIndex": -29
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 900
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "后批完成处理状态同步"
+          },
+          "body": {
+              "rx": 18,
+              "ry": 26
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254469"
+              },
+              {
+                  "group": "right",
+                  "id": "00254470"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254471"
+              },
+              {
+                  "group": "left",
+                  "id": "00254472"
+              }
+          ]
+      },
+      "id": "00159427",
+      "data": {
+          "id": 22,
+          "typeNode": "dialogJob"
+      },
+      "zIndex": -28
+  },
+  {
+      "position": {
+          "x": 980,
+          "y": 520
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "低频客户资金交易文件下发传票数据准备"
+          },
+          "body": {
+              "rx": 6,
+              "ry": 6
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254493"
+              },
+              {
+                  "group": "right",
+                  "id": "00254494"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254495"
+              },
+              {
+                  "group": "left",
+                  "id": "00254496"
+              }
+          ]
+      },
+      "id": "00159442",
+      "data": {
+          "id": 52,
+          "typeNode": "dialogGroup"
+      },
+      "zIndex": -27
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 700
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "主批后批-当日批次完成后事务处理"
+          },
+          "body": {
+              "rx": 6,
+              "ry": 6
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254461"
+              },
+              {
+                  "group": "right",
+                  "id": "00254462"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254463"
+              },
+              {
+                  "group": "left",
+                  "id": "00254464"
+              }
+          ]
+      },
+      "id": "00159423",
+      "data": {
+          "id": 46,
+          "typeNode": "dialogGroup"
+      },
+      "zIndex": -26
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 800
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "晚间批次完成-eveningBatch"
+          },
+          "body": {
+              "rx": 18,
+              "ry": 26
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254465"
+              },
+              {
+                  "group": "right",
+                  "id": "00254466"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254467"
+              },
+              {
+                  "group": "left",
+                  "id": "00254468"
+              }
+          ]
+      },
+      "id": "00159425",
+      "data": {
+          "id": 178,
+          "typeNode": "dialogJob"
+      },
+      "zIndex": -24
+  },
+  {
+      "position": {
+          "x": 800,
+          "y": 520
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "RDCP文件导出"
+          },
+          "body": {
+              "rx": 6,
+              "ry": 6
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254489"
+              },
+              {
+                  "group": "right",
+                  "id": "00254490"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254491"
+              },
+              {
+                  "group": "left",
+                  "id": "00254492"
+              }
+          ]
+      },
+      "id": "00159439",
+      "data": {
+          "id": 32,
+          "typeNode": "dialogGroup"
+      },
+      "zIndex": -23
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 600
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "当日批次完成标识作业"
+          },
+          "body": {
+              "rx": 18,
+              "ry": 26
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254457"
+              },
+              {
+                  "group": "right",
+                  "id": "00254458"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254459"
+              },
+              {
+                  "group": "left",
+                  "id": "00254460"
+              }
+          ]
+      },
+      "id": "00159421",
+      "data": {
+          "id": 61,
+          "typeNode": "dialogJob"
+      },
+      "zIndex": -22
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 520
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "主批后批-次日事务处理"
+          },
+          "body": {
+              "rx": 6,
+              "ry": 6
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254453"
+              },
+              {
+                  "group": "right",
+                  "id": "00254454"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254455"
+              },
+              {
+                  "group": "left",
+                  "id": "00254456"
+              }
+          ]
+      },
+      "id": "00159419",
+      "data": {
+          "id": 30,
+          "typeNode": "dialogGroup"
+      },
+      "zIndex": -21
+  },
+  {
+      "position": {
+          "x": 620,
+          "y": 520
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "调起行所撤并任务（运营中心）"
+          },
+          "body": {
+              "rx": 18,
+              "ry": 26
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254485"
+              },
+              {
+                  "group": "right",
+                  "id": "00254486"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254487"
+              },
+              {
+                  "group": "left",
+                  "id": "00254488"
+              }
+          ]
+      },
+      "id": "00159436",
+      "data": {
+          "id": 179,
+          "typeNode": "dialogJob"
+      },
+      "zIndex": -20
+  },
+  {
+      "position": {
+          "x": 460,
+          "y": 520
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "调起更新内部户明细对手信息任务（票据中心）"
+          },
+          "body": {
+              "rx": 18,
+              "ry": 26
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254481"
+              },
+              {
+                  "group": "right",
+                  "id": "00254482"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254483"
+              },
+              {
+                  "group": "left",
+                  "id": "00254484"
+              }
+          ]
+      },
+      "id": "00159433",
+      "data": {
+          "id": 179,
+          "typeNode": "dialogJob"
+      },
+      "zIndex": -19
+  },
+  {
+      "position": {
+          "x": 980,
+          "y": 864
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "文件导出：文件类型 6"
+          },
+          "body": {
+              "rx": 6,
+              "ry": 6
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254497"
+              },
+              {
+                  "group": "right",
+                  "id": "00254498"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254499"
+              },
+              {
+                  "group": "left",
+                  "id": "00254500"
+              }
+          ]
+      },
+      "id": "00159444",
+      "data": {
+          "id": 14,
+          "typeNode": "dialogGroup"
+      },
+      "zIndex": -18
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 400
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "主批后批-当日事务处理"
+          },
+          "body": {
+              "rx": 6,
+              "ry": 6
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254449"
+              },
+              {
+                  "group": "right",
+                  "id": "00254450"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254451"
+              },
+              {
+                  "group": "left",
+                  "id": "00254452"
+              }
+          ]
+      },
+      "id": "00159417",
+      "data": {
+          "id": 29,
+          "typeNode": "dialogGroup"
+      },
+      "zIndex": -17
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 300
+      },
+      "size": {
+          "width": 100,
+          "height": 36
+      },
+      "attrs": {
+          "text": {
+              "text": "后批批前检查"
+          },
+          "body": {
+              "rx": 6,
+              "ry": 6
+          }
+      },
+      "visible": true,
+      "shape": "custom-rect",
+      "ports": {
+          "groups": {
+              "top": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "right": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "left": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "top",
+                  "id": "00254445"
+              },
+              {
+                  "group": "right",
+                  "id": "00254446"
+              },
+              {
+                  "group": "bottom",
+                  "id": "00254447"
+              },
+              {
+                  "group": "left",
+                  "id": "00254448"
+              }
+          ]
+      },
+      "id": "00159415",
+      "data": {
+          "id": 19,
+          "typeNode": "dialogGroup"
+      },
+      "zIndex": -2
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159414",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159412",
+          "port": "00254439",
+          "cellName": "start",
+          "flowJobId": "start",
+          "nodeId": "0",
+          "typeNode": "dialogStart"
+      },
+      "target": {
+          "cell": "00159413",
+          "port": "00254441",
+          "cellName": "每日任务前置处理",
+          "flowJobId": "63",
+          "nodeId": "-30",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159416",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159413",
+          "port": "00254443",
+          "cellName": "每日任务前置处理",
+          "flowJobId": "63",
+          "nodeId": "-30",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159415",
+          "port": "00254445",
+          "cellName": "后批批前检查",
+          "flowJobId": "19",
+          "nodeId": "-2",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159418",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159415",
+          "port": "00254447",
+          "cellName": "后批批前检查",
+          "flowJobId": "19",
+          "nodeId": "-2",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159417",
+          "port": "00254449",
+          "cellName": "主批后批-当日事务处理",
+          "flowJobId": "29",
+          "nodeId": "-17",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159420",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159417",
+          "port": "00254451",
+          "cellName": "主批后批-当日事务处理",
+          "flowJobId": "29",
+          "nodeId": "-17",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159419",
+          "port": "00254453",
+          "cellName": "主批后批-次日事务处理",
+          "flowJobId": "30",
+          "nodeId": "-21",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159422",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159419",
+          "port": "00254455",
+          "cellName": "主批后批-次日事务处理",
+          "flowJobId": "30",
+          "nodeId": "-21",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159421",
+          "port": "00254457",
+          "cellName": "当日批次完成标识作业",
+          "flowJobId": "61",
+          "nodeId": "-22",
+          "typeNode": "dialogJob"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159424",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159421",
+          "port": "00254459",
+          "cellName": "当日批次完成标识作业",
+          "flowJobId": "61",
+          "nodeId": "-22",
+          "typeNode": "dialogJob"
+      },
+      "target": {
+          "cell": "00159423",
+          "port": "00254461",
+          "cellName": "主批后批-当日批次完成后事务处理",
+          "flowJobId": "46",
+          "nodeId": "-26",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159426",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159423",
+          "port": "00254463",
+          "cellName": "主批后批-当日批次完成后事务处理",
+          "flowJobId": "46",
+          "nodeId": "-26",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159425",
+          "port": "00254465",
+          "cellName": "晚间批次完成-eveningBatch",
+          "flowJobId": "178",
+          "nodeId": "-24",
+          "typeNode": "dialogJob"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159428",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159425",
+          "port": "00254467",
+          "cellName": "晚间批次完成-eveningBatch",
+          "nodeId": "-24",
+          "flowJobId": "178",
+          "typeNode": "dialogJob"
+      },
+      "target": {
+          "cell": "00159427",
+          "port": "00254469",
+          "cellName": "后批完成处理状态同步",
+          "flowJobId": "22",
+          "nodeId": "-28",
+          "typeNode": "dialogJob"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159430",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159427",
+          "port": "00254471",
+          "cellName": "后批完成处理状态同步",
+          "nodeId": "-28",
+          "flowJobId": "22",
+          "typeNode": "dialogJob"
+      },
+      "target": {
+          "cell": "00159429",
+          "port": "00254473",
+          "cellName": "数据清理、备份任务-批后指标检查报告导出",
+          "flowJobId": "179",
+          "nodeId": "-29",
+          "typeNode": "dialogJob"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159432",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159429",
+          "port": "00254475",
+          "cellName": "数据清理、备份任务-批后指标检查报告导出",
+          "flowJobId": "179",
+          "nodeId": "-29",
+          "typeNode": "dialogJob"
+      },
+      "target": {
+          "cell": "00159431",
+          "port": "00254477",
+          "cellName": "每日任务后置处理",
+          "flowJobId": "64",
+          "nodeId": "-31",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159434",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159417",
+          "port": "00254451",
+          "cellName": "主批后批-当日事务处理",
+          "flowJobId": "29",
+          "nodeId": "-17",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159433",
+          "port": "00254481",
+          "cellName": "调起更新内部户明细对手信息任务（票据中心）",
+          "flowJobId": "179",
+          "nodeId": "-19",
+          "typeNode": "dialogJob"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159435",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159433",
+          "port": "00254483",
+          "cellName": "调起更新内部户明细对手信息任务（票据中心）",
+          "flowJobId": "179",
+          "nodeId": "-19",
+          "typeNode": "dialogJob"
+      },
+      "target": {
+          "cell": "00159431",
+          "port": "00254477",
+          "cellName": "每日任务后置处理",
+          "flowJobId": "64",
+          "nodeId": "-31",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159437",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159417",
+          "port": "00254451",
+          "cellName": "主批后批-当日事务处理",
+          "flowJobId": "29",
+          "nodeId": "-17",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159436",
+          "port": "00254485",
+          "cellName": "调起行所撤并任务（运营中心）",
+          "flowJobId": "179",
+          "nodeId": "-20",
+          "typeNode": "dialogJob"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159438",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159436",
+          "port": "00254487",
+          "cellName": "调起行所撤并任务（运营中心）",
+          "flowJobId": "179",
+          "nodeId": "-20",
+          "typeNode": "dialogJob"
+      },
+      "target": {
+          "cell": "00159431",
+          "port": "00254477",
+          "cellName": "每日任务后置处理",
+          "flowJobId": "64",
+          "nodeId": "-31",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159440",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159417",
+          "port": "00254451",
+          "cellName": "主批后批-当日事务处理",
+          "flowJobId": "29",
+          "nodeId": "-17",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159439",
+          "port": "00254489",
+          "cellName": "RDCP文件导出",
+          "flowJobId": "32",
+          "nodeId": "-23",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159441",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159439",
+          "port": "00254491",
+          "cellName": "RDCP文件导出",
+          "flowJobId": "32",
+          "nodeId": "-23",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159431",
+          "port": "00254477",
+          "cellName": "每日任务后置处理",
+          "flowJobId": "64",
+          "nodeId": "-31",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159443",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159417",
+          "port": "00254451",
+          "cellName": "主批后批-当日事务处理",
+          "flowJobId": "29",
+          "nodeId": "-17",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159442",
+          "port": "00254493",
+          "cellName": "低频客户资金交易文件下发传票数据准备",
+          "flowJobId": "52",
+          "nodeId": "-27",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159445",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159442",
+          "port": "00254495",
+          "cellName": "低频客户资金交易文件下发传票数据准备",
+          "flowJobId": "52",
+          "nodeId": "-27",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159444",
+          "port": "00254497",
+          "cellName": "文件导出：文件类型 6",
+          "flowJobId": "14",
+          "nodeId": "-18",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "shape": "edge",
+      "attrs": {
+          "line": {
+              "stroke": "#A2B1C3",
+              "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+              }
+          }
+      },
+      "id": "00159446",
+      "zIndex": 0,
+      "source": {
+          "cell": "00159444",
+          "port": "00254499",
+          "cellName": "文件导出：文件类型 6",
+          "flowJobId": "14",
+          "nodeId": "-18",
+          "typeNode": "dialogGroup"
+      },
+      "target": {
+          "cell": "00159431",
+          "port": "00254477",
+          "cellName": "每日任务后置处理",
+          "flowJobId": "64",
+          "nodeId": "-31",
+          "typeNode": "dialogGroup"
+      }
+  },
+  {
+      "position": {
+          "x": 100,
+          "y": 100
+      },
+      "size": {
+          "width": 85,
+          "height": 45
+      },
+      "attrs": {
+          "text": {
+              "text": "start"
+          }
+      },
+      "visible": true,
+      "shape": "custom-start",
+      "ports": {
+          "groups": {
+              "topStart": {
+                  "position": "top",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "rightStart": {
+                  "position": "right",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "bottomStart": {
+                  "position": "bottom",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              },
+              "leftStart": {
+                  "position": "left",
+                  "attrs": {
+                      "circle": {
+                          "r": 4,
+                          "magnet": true,
+                          "stroke": "#5F95FF",
+                          "strokeWidth": 1,
+                          "fill": "#fff",
+                          "style": {
+                              "visibility": "hidden"
+                          }
+                      }
+                  }
+              }
+          },
+          "items": [
+              {
+                  "group": "topStart",
+                  "id": "00254437"
+              },
+              {
+                  "group": "rightStart",
+                  "id": "00254438"
+              },
+              {
+                  "group": "bottomStart",
+                  "id": "00254439"
+              },
+              {
+                  "group": "leftStart",
+                  "id": "00254440"
+              }
+          ]
+      },
+      "id": "00159412",
+      "data": {
+          "typeNode": "dialogStart"
+      },
+      "zIndex": 1
+  }
+]

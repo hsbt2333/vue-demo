@@ -13,8 +13,9 @@
                 <span>test</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="/test/antdx6/index1">antdx6-1</el-menu-item>
-                <el-menu-item index="/test/antdx6/index2">antdx6-2</el-menu-item>
+                <el-menu-item index="/test/antvx6/demo1">antvx6-demo1</el-menu-item>
+                <el-menu-item index="/test/antvx6/demo2">antvx6-demo2</el-menu-item>
+                <el-menu-item index="/test/antvx6/work">antvx6-work</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-submenu index="/steal">

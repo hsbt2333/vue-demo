@@ -1,3 +1,7 @@
+<!-- 
+
+  antv x6 自定义节点，带进度条
+-->
 <template>
   <div class="my-node">
     <div class="rect">
