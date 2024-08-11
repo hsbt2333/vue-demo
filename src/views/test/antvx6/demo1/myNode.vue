@@ -79,6 +79,15 @@ export default {
   font-size: 12px;
 }
 
+.my-progress >>> .el-progress-bar__outer{
+
+}
+.my-progress >>> .el-progress-bar__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+}
 .my-progress >>> .el-progress-bar__innerText{
   display: inline;
   vertical-align:text-top;

@@ -177,7 +177,7 @@ export default {
           ports[i].style.visibility = show ? 'visible' : 'hidden'
         }
       }
-      this.graph.on('node:mouseenter', () => {
+      /* this.graph.on('node:mouseenter', () => {
         const container = document.getElementById(this.id)
         const ports = container.querySelectorAll('.x6-port-body')
         showPorts(ports, true)
@@ -186,7 +186,7 @@ export default {
         const container = document.getElementById(this.id)
         const ports = container.querySelectorAll('.x6-port-body')
         showPorts(ports, false)
-      })
+      }) */
       // 监听点击画布的节点
       this.graph.on('node:click', ({ e, x, y, node, view }) => {
         this.curNode = node
@@ -570,6 +570,18 @@ export default {
       )
 
       Graph.registerVueComponent("ProgressNode", ProgressNode, true);
+      /* Graph.registerNode("ProgressNode", {
+          inherit: 'vue-shape',
+          width: 200,
+          height: 36,
+          component: ProgressNode,
+          attrs: {
+            body: {
+            },
+            text: {},
+          },
+          ports: { ...this.ports }
+        }, true); */
 
       Graph.registerNode(
         'custom-polygon',
@@ -860,7 +872,7 @@ export default {
           //   item.size.width = '180'
           // }
           item.component = 'ProgressNode';
-          console.log(item)
+          console.log(item);
           cells.push(this.graph.createNode(item))
         }
       })
@@ -871,8 +883,8 @@ export default {
     console.log(this.dataJson);
 
     this.initGraph();
-    //this.graphBindKey();
-    //this.graphOnEvent();
+    this.graphBindKey();
+    this.graphOnEvent();
     this.initPorts();
     this.loadStencil();
     this.initData(this.dataJson);

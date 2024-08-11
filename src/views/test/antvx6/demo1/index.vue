@@ -6,7 +6,7 @@
     <!-- <div style="width: 15%;">
       <el-progress :text-inside="true" :stroke-width="20" :percentage="100" status="success"></el-progress>
     </div> -->
-    <!-- <my-node :percentage="50" label="获取批量日期" nodeStatus="作业" :nodeId="-2"></my-node> -->
+    <my-node :percentage="25" label="获取批量日期" nodeStatus="作业" :nodeId="-2"></my-node>
   </div>
 </template>
 <script>
