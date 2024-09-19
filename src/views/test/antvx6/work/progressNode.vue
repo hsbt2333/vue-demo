@@ -1,6 +1,6 @@
 <template>
   <div class="my-progress">
-    <el-progress :format="myFormat" v-show="visible" :status="status" :percentage="percentage" :stroke-width="12"  :show-text="true" :text-inside="true" stroke-linecap="round" />
+    <el-progress :format="myFormat" v-show="visible" :percentage="percentage" :stroke-width="12"  :show-text="true" :text-inside="true" stroke-linecap="round" />
   </div>
 </template>
 
@@ -10,8 +10,8 @@ export default {
   data() {
     return {
       label: '',
-      visible: false,
-      status: 'success',
+      visible: true,
+      color: '#3ba272',
       percentage: 0,
     };
   },
@@ -25,7 +25,7 @@ export default {
     console.log(node);
     this.label = node.attrs.text.text;
     console.log(this.label);
-    if(this.label === '每日任务前置处理'){
+    /* if(this.label === '每日任务前置处理'){
       this.visible = true;
       this.percentage = 0;
     }
@@ -36,7 +36,7 @@ export default {
     if(this.label === '主批后批-当日事务处理'){
       this.visible = true;
       this.percentage = 100;
-    }
+    } */
   },
 };
 </script>

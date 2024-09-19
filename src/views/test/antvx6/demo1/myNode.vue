@@ -10,10 +10,14 @@
       <span class="right text">节点 ID: {{ nodeId }}</span>
     </div>
     <div class="my-progress">
-      <el-progress :percentage="percentage" :status="status" :format="myFormat" type="line" :stroke-width="12" :show-text="true" :text-inside="true" stroke-linecap="round">
+      <el-progress :percentage="percentage" :status="status" :color="color" :format="myFormat" type="line" :stroke-width="12" :show-text="true" :text-inside="true" stroke-linecap="round">
       </el-progress>
     </div>
-    
+    <!-- <div style="width: 200px;text-align: center;">
+      <el-progress :percentage="percentage" :status="status" :format="myFormat" type="line" :stroke-width="12" :show-text="false" :text-inside="true" stroke-linecap="round">
+      </el-progress>
+      <span style="position: relative;bottom: 20px;">1111</span>
+    </div> -->
   </div>
 </template>
 
@@ -29,7 +33,8 @@ export default {
     return {
       // success/exception/warning
       status: 'success',
-      visable: false
+      visable: false,
+      color: '#ee6666'
     }
   },
   methods:{
@@ -79,9 +84,6 @@ export default {
   font-size: 12px;
 }
 
-.my-progress >>> .el-progress-bar__outer{
-
-}
 .my-progress >>> .el-progress-bar__inner{
   display: flex;
   justify-content: center;

@@ -7,6 +7,12 @@
       <el-progress :text-inside="true" :stroke-width="20" :percentage="100" status="success"></el-progress>
     </div> -->
     <my-node :percentage="25" label="获取批量日期" nodeStatus="作业" :nodeId="-2"></my-node>
+
+    <div class="my-div">
+      <el-progress :show-text="false" :stroke-width="12" :percentage="25"></el-progress>
+    </div>
+    <div class="mydiv2"></div>
+    <div class="mydiv3"></div>
   </div>
 </template>
 <script>
@@ -200,4 +206,20 @@ export default {
 };
 </script>
 <style scoped>
+.my-div{
+  width: 200px;
+  height: 200px;
+}
+.mydiv2{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  background: #FE8620;
+}
+.mydiv3{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  background: #DAEED2;
+}
 </style>
